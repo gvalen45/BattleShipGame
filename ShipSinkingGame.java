@@ -125,25 +125,7 @@ public class ShipSinkingGame {
 
 
 			}
-        for (int i = 0; i < 10; i++) {
-
-				for (int j = 0; j < 10; j++) {
-				   // creates a copy of the sea class that can be used to compare the cells
-               Ship temp = s.getShip(i, j);
-					//if statements checks if a object is in that class and displays its ID letter
-               if (temp != null && seaGrid[i][j] != "." && seaGrid[i][j] != "X" && seaGrid[i][j] != "*") {
-
-						seaGrid[i][j] = s.check(temp);
-               // else there is no object in  the cell and displays a dot '.'
-					} else {
-
-						seaGrid[i][j] = ".";
-
-					}
-				}
-         
-			}
-
+        
 		} else {
 
          //for loop creates the CHEAT mode sea grid
